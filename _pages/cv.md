@@ -9,6 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/easycv@0.2.2/dist/easycv.css"
+>
+
 <div id="cv-root">
   <p>Loading CV...</p>
 </div>
@@ -19,7 +24,7 @@ redirect_from:
 </noscript>
 
 <script type="module">
-  import { renderCv } from "https://cdn.jsdelivr.net/npm/easycv/+esm";
+  import { renderCv } from "https://cdn.jsdelivr.net/npm/easycv@0.2.2/+esm";
   import { load as loadYaml } from "https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm";
 
   const target = "#cv-root";
