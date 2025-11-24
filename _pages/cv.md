@@ -9,56 +9,42 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<div id="cv-root">
+  <p>Loading CV...</p>
+</div>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<noscript>
+  JavaScript is required to view the EasyCV layout. You can download the raw data at
+  <a href="{{ '/files/cv_data.yml' | relative_url }}">cv_data.yml</a>.
+</noscript>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+<script type="module">
+  import { renderCv } from "https://cdn.jsdelivr.net/npm/easycv/+esm";
+  import { load as loadYaml } from "https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm";
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  const target = "#cv-root";
+  const dataUrl = "{{ '/files/cv_data.yml' | relative_url }}";
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  async function mountCv() {
+    const response = await fetch(dataUrl, { cache: "no-cache" });
+    if (!response.ok) {
+      throw new Error(`Request failed: ${response.status}`);
+    }
+
+    const yaml = await response.text();
+    const data = loadYaml(yaml);
+
+    renderCv(target, data, {
+      titleTemplate: "%s | CV",
+      actions: true,
+    });
+  }
+
+  mountCv().catch((error) => {
+    const root = document.querySelector(target);
+    if (root) {
+      root.innerHTML = "<p>Sorry, we couldn't load the CV right now.</p>";
+    }
+    console.error("EasyCV failed to render", error);
+  });
+</script>

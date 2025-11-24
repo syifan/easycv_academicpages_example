@@ -1,0 +1,172 @@
+version: 1
+header:
+  name: "Your Sidebar Name"
+  tags:
+    - "Version Control Theory Ph.D. (expected 2018)"
+    - "GitHub University"
+  contact:
+    email:
+      value: "none@example.org"
+      href: "mailto:none@example.org"
+      icon: "fa-solid fa-envelope"
+      display: true
+    website:
+      value: "academicpages.github.io"
+      href: "https://academicpages.github.io"
+      icon: "fa-solid fa-globe"
+      display: true
+    location:
+      value: "Earth, US"
+      icon: "fa-solid fa-location-dot"
+      display: true
+sections:
+  - id: summary
+    title: "Summary"
+    entries:
+      - content:
+          - "Currently employed at Red Brick University."
+          - "Short biography for the left-hand sidebar."
+
+  - id: experience
+    title: "Work Experience"
+    entries:
+      - meta:
+          - "Spring 2024"
+          - "GitHub University"
+        content:
+          - "**Academic Pages Collaborator**"
+          - "Supervisor: The Users"
+          - "Duties include updates and improvements to the template."
+      - meta:
+          - "Fall 2015"
+          - "GitHub University"
+        content:
+          - "**Research Assistant**"
+          - "Supervisor: Professor Hub"
+          - "Merged pull requests for the research group."
+      - meta:
+          - "Summer 2015"
+          - "GitHub University"
+        content:
+          - "**Research Assistant**"
+          - "Supervisor: Professor Git"
+          - "Tagged issues and assisted with lab workflows."
+
+  - id: education
+    title: "Education"
+    entries:
+      - meta:
+          - "2018 (expected)"
+        content:
+          - "**Ph.D in Version Control Theory**"
+          - "GitHub University"
+      - meta:
+          - "2014"
+        content:
+          - "**M.S. in Jekyll**"
+          - "GitHub University"
+      - meta:
+          - "2012"
+        content:
+          - "**B.S. in GitHub**"
+          - "GitHub University"
+
+  - id: skills
+    title: "Skills"
+    condensed: true
+    entries:
+      - content:
+          - "**Skill 1**"
+      - content:
+          - "**Skill 2**"
+          - "Sub-skill 2.1"
+          - "Sub-skill 2.2"
+          - "Sub-skill 2.3"
+      - content:
+          - "**Skill 3**"
+
+  - id: publications
+    title: "Publications"
+    entries:
+      - index: "1."
+        meta:
+          - "2009"
+        content:
+          - "**Paper Title Number 1**"
+          - "Journal 1"
+          - "This paper is about the number 1. The number 2 is left for future work."
+          - "Link: https://academicpages.github.io/files/paper1.pdf"
+      - index: "2."
+        meta:
+          - "2010"
+        content:
+          - "**Paper Title Number 2**"
+          - "Journal 1"
+          - "This paper is about the number 2. The number 3 is left for future work."
+          - "Link: https://academicpages.github.io/files/paper2.pdf"
+      - index: "3."
+        meta:
+          - "2015"
+        content:
+          - "**Paper Title Number 3**"
+          - "Journal 1"
+          - "This paper is about the number 3. The number 4 is left for future work."
+          - "Link: https://academicpages.github.io/files/paper3.pdf"
+      - index: "4."
+        meta:
+          - "2024"
+        content:
+          - "**Paper Title Number 4**"
+          - "GitHub Journal of Bugs"
+          - "This paper is about fixing template issue #693."
+          - "Link: https://academicpages.github.io/files/paper3.pdf"
+
+  - id: talks
+    title: "Talks"
+    entries:
+      - meta:
+          - "2012"
+          - "San Francisco, CA"
+        content:
+          - "**Talk 1 on Relevant Topic in Your Field**"
+          - "UC San Francisco, Department of Testing"
+      - meta:
+          - "2013"
+          - "Berkeley, CA"
+        content:
+          - "**Tutorial 1 on Relevant Topic in Your Field**"
+          - "UC-Berkeley Institute for Testing Science"
+      - meta:
+          - "2014"
+          - "London, UK"
+        content:
+          - "**Talk 2 on Relevant Topic in Your Field**"
+          - "London School of Testing"
+      - meta:
+          - "2014"
+          - "Los Angeles, CA"
+        content:
+          - "**Conference Proceeding talk 3 on Relevant Topic in Your Field**"
+          - "Testing Institute of America 2014 Annual Conference"
+
+  - id: teaching
+    title: "Teaching"
+    entries:
+      - meta:
+          - "2014"
+        content:
+          - "**Teaching experience 1**"
+          - "University 1, Department"
+          - "Role: Undergraduate course"
+      - meta:
+          - "2015"
+        content:
+          - "**Teaching experience 2**"
+          - "University 1, Department"
+          - "Role: Workshop"
+
+  - id: service
+    title: "Service and Leadership"
+    entries:
+      - content:
+          - "Currently signed in to 43 different slack teams."
