@@ -32,23 +32,23 @@ sections:
     entries:
       - meta:
           - "Spring 2024"
-          - "GitHub University"
         content:
-          - "**Academic Pages Collaborator**"
+          - "GitHub University"
+          - "Academic Pages Collaborator"
           - "Supervisor: The Users"
           - "Duties include updates and improvements to the template."
       - meta:
           - "Fall 2015"
-          - "GitHub University"
         content:
-          - "**Research Assistant**"
+          - "GitHub University"
+          - "Research Assistant"
           - "Supervisor: Professor Hub"
           - "Merged pull requests for the research group."
       - meta:
           - "Summer 2015"
-          - "GitHub University"
         content:
-          - "**Research Assistant**"
+          - "GitHub University"
+          - "Research Assistant"
           - "Supervisor: Professor Git"
           - "Tagged issues and assisted with lab workflows."
 
@@ -58,17 +58,17 @@ sections:
       - meta:
           - "2018 (expected)"
         content:
-          - "**Ph.D in Version Control Theory**"
+          - "Ph.D in Version Control Theory"
           - "GitHub University"
       - meta:
           - "2014"
         content:
-          - "**M.S. in Jekyll**"
+          - "M.S. in Jekyll"
           - "GitHub University"
       - meta:
           - "2012"
         content:
-          - "**B.S. in GitHub**"
+          - "B.S. in GitHub"
           - "GitHub University"
 
   - id: skills
@@ -76,14 +76,14 @@ sections:
     condensed: true
     entries:
       - content:
-          - "**Skill 1**"
+          - "Skill 1"
       - content:
-          - "**Skill 2**"
+          - "Skill 2"
           - "Sub-skill 2.1"
           - "Sub-skill 2.2"
           - "Sub-skill 2.3"
       - content:
-          - "**Skill 3**"
+          - "Skill 3"
 
   - id: publications
     title: "Publications"
@@ -92,7 +92,7 @@ sections:
         meta:
           - "2009"
         content:
-          - "**Paper Title Number 1**"
+          - "Paper Title Number 1"
           - "Journal 1"
           - "This paper is about the number 1. The number 2 is left for future work."
           - "Link: https://academicpages.github.io/files/paper1.pdf"
@@ -100,7 +100,7 @@ sections:
         meta:
           - "2010"
         content:
-          - "**Paper Title Number 2**"
+          - "Paper Title Number 2"
           - "Journal 1"
           - "This paper is about the number 2. The number 3 is left for future work."
           - "Link: https://academicpages.github.io/files/paper2.pdf"
@@ -108,7 +108,7 @@ sections:
         meta:
           - "2015"
         content:
-          - "**Paper Title Number 3**"
+          - "Paper Title Number 3"
           - "Journal 1"
           - "This paper is about the number 3. The number 4 is left for future work."
           - "Link: https://academicpages.github.io/files/paper3.pdf"
@@ -116,7 +116,7 @@ sections:
         meta:
           - "2024"
         content:
-          - "**Paper Title Number 4**"
+          - "Paper Title Number 4"
           - "GitHub Journal of Bugs"
           - "This paper is about fixing template issue #693."
           - "Link: https://academicpages.github.io/files/paper3.pdf"
@@ -126,27 +126,27 @@ sections:
     entries:
       - meta:
           - "2012"
-          - "San Francisco, CA"
         content:
-          - "**Talk 1 on Relevant Topic in Your Field**"
+          - "San Francisco, CA"
+          - "Talk 1 on Relevant Topic in Your Field"
           - "UC San Francisco, Department of Testing"
       - meta:
           - "2013"
-          - "Berkeley, CA"
         content:
-          - "**Tutorial 1 on Relevant Topic in Your Field**"
+          - "Berkeley, CA"
+          - "Tutorial 1 on Relevant Topic in Your Field"
           - "UC-Berkeley Institute for Testing Science"
       - meta:
           - "2014"
-          - "London, UK"
         content:
-          - "**Talk 2 on Relevant Topic in Your Field**"
+          - "London, UK"
+          - "Talk 2 on Relevant Topic in Your Field"
           - "London School of Testing"
       - meta:
           - "2014"
-          - "Los Angeles, CA"
         content:
-          - "**Conference Proceeding talk 3 on Relevant Topic in Your Field**"
+          - "Los Angeles, CA"
+          - "Conference Proceeding talk 3 on Relevant Topic in Your Field"
           - "Testing Institute of America 2014 Annual Conference"
 
   - id: teaching
@@ -155,13 +155,13 @@ sections:
       - meta:
           - "2014"
         content:
-          - "**Teaching experience 1**"
+          - "Teaching experience 1"
           - "University 1, Department"
           - "Role: Undergraduate course"
       - meta:
           - "2015"
         content:
-          - "**Teaching experience 2**"
+          - "Teaching experience 2"
           - "University 1, Department"
           - "Role: Workshop"
 
