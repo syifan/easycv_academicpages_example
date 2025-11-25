@@ -10,7 +10,11 @@ redirect_from:
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/easycv@0.2.3/dist/easycv.css"
+  href="https://cdn.jsdelivr.net/npm/easycv@0.3.0/dist/easycv.css"
+>
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/customize_easycv.css' | relative_url }}"
 >
 
 <div id="cv-root">
@@ -23,7 +27,7 @@ redirect_from:
 </noscript>
 
 <script type="module">
-  import { renderCv } from "https://cdn.jsdelivr.net/npm/easycv@0.2.3/+esm";
+  import { renderCv } from "https://cdn.jsdelivr.net/npm/easycv@0.3.0/+esm";
   import { load as loadYaml } from "https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/+esm";
 
   const target = "#cv-root";

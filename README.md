@@ -4,7 +4,8 @@ This repo is a fork of [Academic Pages](https://academicpages.github.io/) that d
 
 
 ## What's here
-- `_pages/cv.md`: EasyCV-powered CV page that loads EasyCV v0.2.3 from the CDN.
+- `_pages/cv.md`: EasyCV-powered CV page that loads EasyCV v0.3.0 from the CDN.
+- `assets/css/customize_easycv.css`: Local overrides for EasyCV styling (matches the upstream example).
 - `files/cv_data.yml`: Sample EasyCV data file to drive the page.
 - `academic_pages_readme.md`: The original Academic Pages README for reference.
 
@@ -16,7 +17,7 @@ This repo is a fork of [Academic Pages](https://academicpages.github.io/) that d
 
 ## How our CV differs from the upstream Academic Pages CV
 - The upstream `_pages/cv.md` is a static markdown page with hand-written sections plus Jekyll loops for publications, talks, and teaching pulled from collections.
-- Our `_pages/cv.md` keeps a small HTML stub (`#cv-root`) and loads `easycv@0.2.3` and `js-yaml@4.1.0` from the CDN.
+- Our `_pages/cv.md` keeps a small HTML stub (`#cv-root`) and loads `easycv@0.3.0` and `js-yaml@4.1.0` from the CDN, plus a local `customize_easycv.css` with sample overrides.
 - On page load it fetches `/files/cv_data.yml` (no-cache), parses the YAML, and calls `renderCv` to build the CV UI with a title template and action buttons.
 - Styles come from the EasyCV CSS on the CDN; if loading fails, the page shows a fallback message, and the raw data link remains available for no-JS browsers.
 
